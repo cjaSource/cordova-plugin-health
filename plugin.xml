@@ -70,6 +70,9 @@
     <source-file src="src/ios/HealthKit.m"/>
 
     <framework src="HealthKit.framework" weak="true" />
+
+      <hook type="after_plugin_install" src="src/ios/hooks/prerequisites.js"/>
+      <hook type="after_plugin_install" src="src/ios/hooks/install_entitlements.js"/>
   </platform>
 
   <!-- android -->
